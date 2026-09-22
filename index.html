@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="indexStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>個人報名 Individual Registration</h1>
+    </header>
+    <form action="">
+        <div class="section">
+            <h2 class="section-title">基本資料 / Basic Information</h2>
+
+            <div class="form-row">
+                <label for="name">姓名 / Name<span>*</span></label>
+                <input type="text" id="name" name="name" placeholder="請輸入姓名">
+            </div>
+
+            <div class="form-row">
+                <p>性別 / Gender</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">男 / male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">女 / female</label>
+            </div>
+
+            <div class="form-row">
+                <p>國籍 / Nationality</p>
+                <input type="radio" id="roc" name="nationality" value="roc" checked>
+                <label for="roc">本國國籍 / ROC Citizens</label>
+                <input type="radio" id="non" name="nationality" value="non">
+                <label for="non">外國國籍 / Non-Citizens</label>
+
+                <label for="id-number">身分證字號 / ID Number<span>*</span></label>
+                <input type="text" id="id-number" name="id-number" placeholder="身分證號或護照號碼">
+            </div>
+
+            <div class="form-row">
+                <p>出生日期 / Date Of Birth</p>
+                <select id="birth-year" name="birth-year">
+                    <option value="">年 Year</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                </select>
+                <select id="birth-month" name="birth-month">
+                    <option value="">月 Month</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <select id="birth-day" name="birth-day">
+                    <option value="">日 Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+
+                <label for="email">電子信箱 / Email<span>*</span></label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com">
+            </div>
+
+            <div class="form-row">
+                <p>聯絡電話 / Contact Number</p>
+                <label for="mobile">手機 / Mobile</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="0912345678">
+                <label for="home-phone">住家 / Home</label>
+                <input type="tel" id="home-phone" name="home-phone" placeholder="02345678">
+                <label for="office-phone">公司 / Office</label>
+                <input type="tel" id="office-phone" name="office-phone">
+            </div>
+
+            <div class="form-row">
+                <p>通訊地址 / Mailing Address</p>
+                <select id="city" name="city">
+                    <option value="">請選擇縣市別 County/City</option>
+                    <option value="taipei">台北市</option>
+                    <option value="taichung">台中市</option>
+                </select>
+                <select id="district" name="district">
+                    <option value="">請選擇鄉鎮區別 Township</option>
+                    <option value="neihu">內湖區</option>
+                    <option value="beitou">北投區</option>
+                </select>
+                <input type="text" id="zipcode" name="zipcode" placeholder="郵遞區號">
+                <input type="text" id="address" name="address" placeholder="例如：昌吉街55號2樓206室">
+            </div>
+
+            <div class="form-row">
+                <p>緊急聯絡人 / Emergency Contact</p>
+                <label for="emergency-name">姓名 / Name of Emergency Contact</label>
+                <input type="text" id="emergency-name" name="emergency-name">
+                <label for="emergency-relationship">關係 / Relationship</label>
+                <input type="text" id="emergency-relationship" name="emergency-relationship">
+                <label for="emergency-phone">電話 / Phone</label>
+                <input type="tel" id="emergency-phone" name="emergency-phone">
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">競賽項目資料 / Race Category Information</h2>
+
+            <div class="form-row">
+                <input type="checkbox" id="race-9km" name="race-category" value="9km">
+                <label for="race-9km">9KM（NTD 800）</label>
+                <select id="size-9km" name="size-9km">
+                    <option value="">請選擇衣服尺寸</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <input type="checkbox" id="race-3km" name="race-category" value="3km">
+                <label for="race-3km">3KM（NTD 650）</label>
+                <select id="size-3km" name="size-3km">
+                    <option value="">請選擇衣服尺寸</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">報到方式(二擇一) / Check-in Method</h2>
+
+            <div class="form-row">
+                <p>郵寄代理報到 / Postal delivery check-in</p>
+
+                <input type="radio" id="checkin-postal" name="postal-delivery" value="postal">
+                <label for="checkin-postal">是 / Y（需額外付費，限台灣本島）</label>
+
+                <input type="radio" id="checkin-onsite" name="postal-delivery" value="onsite" checked>
+                <label for="checkin-onsite">否 / N</label>
+            </div>
+
+            <div class="form-row">
+                <input type="radio" id="checkin-location" name="checkin-location" value="onsite-huabo" checked>
+                <label for="checkin-location">地點：花博爭艷館（臺北市中山區玉門街1號）</label>
+
+                <label for="checkin-start">時間：</label>
+                <input type="date" id="checkin-start" name="checkin-start" value="2026-12-17">
+                ~
+                <input type="date" id="checkin-end" name="checkin-end" value="2026-12-18">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">其他 / Others</h2>
+
+            <div class="form-row">
+                <label for="website">個人網站 / Website（選填）</label>
+                <input type="url" id="website" name="website" placeholder="https://">
+            </div>
+
+            <div class="form-row">
+                <label for="note">備註 / Note</label>
+                <textarea id="note" name="note" placeholder="如有特殊需求請於此說明"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="photo">上傳證件照 / Upload Photo</label>
+                <input type="file" id="photo" name="photo">
+            </div>
+        </div>
+
+        <div class="form-row btn-row">
+            <input type="submit" value="送出報名" class="btn btn-submit">
+            <input type="reset" value="清除重填" class="btn btn-reset">
+            <a href="aidenForm.html" class="beauty-link">
+                版本切換
+            </a>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
