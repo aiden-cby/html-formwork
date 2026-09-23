@@ -1,18 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
   font-family: Arial, "Microsoft JhengHei", sans-serif;
-
   font-weight: bold;
-
   color: #333;
-
   background-color: #f3f5f8;
-
   line-height: 1.5;
 }
 
@@ -23,7 +19,6 @@ h1 {
   background-color: #525c91;
   text-align: center;
   padding: 10px;
-  /* margin-bottom: 15px; */
 }
 
 .section {
@@ -34,7 +29,7 @@ h1 {
 
 .section-title {
   display: inline-block; /* 讓背景只包住文字寬度 */
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   background-color: #525c91;
   padding: 3px 10px;
@@ -42,8 +37,8 @@ h1 {
 }
 
 .form-row {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   align-items: center;
   gap: 8px;
   margin-bottom: 12px;
@@ -51,12 +46,11 @@ h1 {
 
 label,
 .form-row p {
-  font-weight: bold;
   margin-right: 8px;
 }
 
 .btn {
-  font-size: 14px;
+  font-size: 18px;
   border: 1px solid #999;
   padding: 6px 16px;
   color: #fff;

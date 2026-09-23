@@ -19,7 +19,7 @@
 
             <div class="form-row">
                 <label for="name">姓名 / Name<span>*</span></label>
-                <input type="text" id="name" name="name" placeholder="請輸入姓名">
+                <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
             </div>
 
             <div class="form-row">
@@ -38,11 +38,11 @@
                 <label for="non">外國國籍 / Non-Citizens</label>
 
                 <label for="id-number">身分證字號 / ID Number<span>*</span></label>
-                <input type="text" id="id-number" name="id-number" placeholder="身分證號或護照號碼">
+                <input type="text" id="id-number" name="id-number" placeholder="身分證號或護照號碼" required>
             </div>
 
             <div class="form-row">
-                <p>出生日期 / Date Of Birth</p>
+                <label for="birth">出生日期 / Date Of Birth</label>
                 <select id="birth-year" name="birth-year">
                     <option value="">年 Year</option>
                     <option value="2000">2000</option>
@@ -58,13 +58,14 @@
                     <option value="1">1</option>
                     <option value="2">2</option>
                 </select>
-
+            </div>
+            <div class="form-row">
                 <label for="email">電子信箱 / Email<span>*</span></label>
-                <input type="email" id="email" name="email" placeholder="example@mail.com">
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
             </div>
 
             <div class="form-row">
-                <p>聯絡電話 / Contact Number</p>
+                <label for="">聯絡電話 / Contact Number</label>
                 <label for="mobile">手機 / Mobile</label>
                 <input type="tel" id="mobile" name="mobile" placeholder="0912345678">
                 <label for="home-phone">住家 / Home</label>
@@ -74,7 +75,7 @@
             </div>
 
             <div class="form-row">
-                <p>通訊地址 / Mailing Address</p>
+                <label for="city">通訊地址 / Mailing Address</label>
                 <select id="city" name="city">
                     <option value="">請選擇縣市別 County/City</option>
                     <option value="taipei">台北市</option>
@@ -90,7 +91,7 @@
             </div>
 
             <div class="form-row">
-                <p>緊急聯絡人 / Emergency Contact</p>
+                <label>緊急聯絡人 / Emergency Contact</label>
                 <label for="emergency-name">姓名 / Name of Emergency Contact</label>
                 <input type="text" id="emergency-name" name="emergency-name">
                 <label for="emergency-relationship">關係 / Relationship</label>
@@ -98,7 +99,6 @@
                 <label for="emergency-phone">電話 / Phone</label>
                 <input type="tel" id="emergency-phone" name="emergency-phone">
             </div>
-
         </div>
 
         <div class="section">
@@ -179,7 +179,6 @@
                 版本切換
             </a>
         </div>
-
     </form>
 
 </body>
